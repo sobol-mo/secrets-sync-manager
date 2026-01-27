@@ -18,22 +18,21 @@ echo -e "${CYAN}║${NC}    Installing Universal Secrets Sync Manager...        
 echo -e "${CYAN}╚════════════════════════════════════════════════════════════╝${NC}"
 echo ""
 
-# Step 1: Verify tool directory exists
-echo "📁 Step 1: Verifying tool directory..."
-if [ ! -d "$TOOL_DIR" ]; then
-    echo -e "${RED}✗${NC} Tool directory not found: $TOOL_DIR"
-    exit 1
-fi
-echo -e "${GREEN}✓${NC} Tool directory exists"
+# Step 1: Create tool directory and copy files
+echo "📁 Step 1: Setting up tool directory..."
+mkdir -p "$TOOL_DIR"
+echo -e "${GREEN}✓${NC} Tool directory created"
+echo ""
+
+echo "📄 Step 2: Copying scripts..."
+cp "$(dirname "$0")/secrets-sync" "$TOOL_DIR/"
+cp "$(dirname "$0")/uninstall.sh" "$TOOL_DIR/"
+echo -e "${GREEN}✓${NC} Copied scripts"
 echo ""
 
 # Step 2: Make script executable
-echo "🔧 Step 2: Making script executable..."
+echo "🔧 Step 3: Making scripts executable..."
 chmod +x "$SCRIPT_PATH"
-if [ ! -f "$TOOL_DIR/uninstall.sh" ]; then
-    echo -e "${YELLOW}ℹ${NC} uninstall.sh not found in $TOOL_DIR, copying..."
-    cp "$(dirname "$0")/uninstall.sh" "$TOOL_DIR/"
-fi
 chmod +x "$TOOL_DIR/uninstall.sh"
 echo -e "${GREEN}✓${NC} Made executable"
 echo ""
