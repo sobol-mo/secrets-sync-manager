@@ -2,7 +2,7 @@
 
 **Universal tool for synchronizing `~/.secrets/` directory across multiple machines**
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/yourusername/secrets-sync-manager)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/sobol-mo/secrets-sync-manager)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Linux-lightgrey.svg)](https://www.linux.org/)
 
@@ -60,7 +60,7 @@ Centralize all credentials:
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/secrets-sync-manager.git
+git clone https://github.com/sobol-mo/secrets-sync-manager.git
 cd secrets-sync-manager
 
 # Run installer
@@ -185,7 +185,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/secrets-sync-manager.git
+git clone https://github.com/sobol-mo/secrets-sync-manager.git
 cd secrets-sync-manager
 
 # Make changes
@@ -218,7 +218,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/secrets-sync-manager/issues)
+- **Issues**: [GitHub Issues](https://github.com/sobol-mo/secrets-sync-manager/issues)
 - **Documentation**: See [README.md](README.md) for full documentation
 - **Email**: <your.email@example.com>
 
