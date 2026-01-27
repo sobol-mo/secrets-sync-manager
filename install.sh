@@ -30,6 +30,10 @@ echo ""
 # Step 2: Make script executable
 echo "🔧 Step 2: Making script executable..."
 chmod +x "$SCRIPT_PATH"
+if [ ! -f "$TOOL_DIR/uninstall.sh" ]; then
+    echo -e "${YELLOW}ℹ${NC} uninstall.sh not found in $TOOL_DIR, copying..."
+    cp "$(dirname "$0")/uninstall.sh" "$TOOL_DIR/"
+fi
 chmod +x "$TOOL_DIR/uninstall.sh"
 echo -e "${GREEN}✓${NC} Made executable"
 echo ""
