@@ -7,10 +7,10 @@
 # ============================================================================
 
 # Desktop (Main Workstation)
-# SWC|maxim|192.168.1.10
+# SWC|maxim|192.168.88.25
 
 # Mobile Workstations
-MWC2|maxim|192.168.1.20
+MWC2|maxim|192.168.1.31
 MWC3|maxim|192.168.1.30
 
 # Production Server
