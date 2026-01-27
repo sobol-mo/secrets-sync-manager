@@ -1,0 +1,40 @@
+# Secrets Sync - Machine Configuration
+# Format: NAME|USER|HOST
+# Lines starting with # are comments
+
+# ============================================================================
+# Your Machines
+# ============================================================================
+
+# Desktop (Main Workstation)
+# SWC|maxim|192.168.1.10
+
+# Mobile Workstations
+MWC2|maxim|192.168.1.20
+MWC3|maxim|192.168.1.30
+
+# Production Server
+VPS|root|46.62.165.153
+
+# ============================================================================
+# Examples
+# ============================================================================
+
+# Using hostname instead of IP:
+# LAPTOP|maxim|laptop.local
+
+# Using domain name:
+# SERVER|deploy|example.com
+
+# Using custom SSH port (requires manual rsync command):
+# CUSTOM|user|host.com  # Then use: rsync -e 'ssh -p 2222' ...
+
+# ============================================================================
+# Notes
+# ============================================================================
+
+# - Use SSH keys for passwordless access: ssh-copy-id user@host
+# - Test connection before syncing: ssh user@host
+# - Keep this file secure: chmod 600 ~/.config/secrets-sync/machines.conf
+# - One machine per line
+# - Empty lines and comments are ignored

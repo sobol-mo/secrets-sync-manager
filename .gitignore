@@ -1,0 +1,31 @@
+# Secrets Sync Manager - Git Ignore
+
+# User-specific configuration (contains machine IPs)
+machines.conf
+
+# Backup files
+*.bak
+*.backup
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+*~
+
+# Editor files
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Test files
+test/
+*.test
+
+# Personal notes
+NOTES.md
+TODO.md
